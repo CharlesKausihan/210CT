@@ -1,0 +1,3 @@
+#Coutning trailing 0s in a factorial
+f = int(input('Enter factorial: '))
+print((str('Number of trailing zeros:')),(int(f/5))) #Factorial divided by 5
