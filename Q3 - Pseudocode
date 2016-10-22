@@ -1,0 +1,12 @@
+Pseudocode for Perfect Square 
+
+INPUT s
+x <- 0
+if s >= 0 then:
+	while x*x < s then
+		x <- [x+1]
+	if x*x !<- s then
+		x <- [x-1]
+		print highest_square
+	else: print square_root
+else print x_is_not_a_positive_number
