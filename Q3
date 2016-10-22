@@ -1,0 +1,29 @@
+##import math
+##s = (int(input('Input Number: ')))
+##print(int(round(math.sqrt(s))))
+
+##s = (int(input('Input number: ')))
+##def highest_perfect_square(s):
+##    n = 0
+##    i = 1
+##    while (n<=s):
+##        if i*i <= s:
+##            n = i*i
+##            i += 1
+##        else:
+##            return
+
+
+s = (int(input('Input number: ')))
+x = 0
+if s >= 0:
+    while x*x < s: 
+        x +=1 #Keep adding 1 to x
+    if x*x != s:
+        x=x-1 #Take 1 away from x if x*x is bigger than s
+        print (x)
+    else: print(x)
+else: print(str(s)+' is not a positive number')
+
+
+
