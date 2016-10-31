@@ -1,4 +1,5 @@
 #Counting trailing 0s in a factorial
+
 def countingZero(f):
     count = 0
     while f > 0:
