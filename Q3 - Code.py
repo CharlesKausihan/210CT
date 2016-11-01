@@ -9,4 +9,4 @@ if s >= 0:
         x=x-1					
         print(x)		
     else: print(x)
-else: print(str(s)+ 'is not a positive number')
+else: print(str(s), 'is not a positive number')
