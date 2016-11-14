@@ -19,8 +19,9 @@ def binarySearch(alist,low,high,n):
 
     return False
 
+print('List: [2,3,5,7,9,13]')
 alist = [2,3,5,7,9,13]
 n = 6
-low = 4
-high = 6
+low = int(input('Enter low: '))
+high = int(input('Enter high: '))
 print(binarySearch(alist,low,high,n))
