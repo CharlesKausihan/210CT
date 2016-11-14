@@ -1,0 +1,12 @@
+Pseudocode for checking if a number is a prime
+
+INPUT n
+if s > 1 then:
+	for i in range of 2&n:
+		if n/1 <- 0 then:
+			print(n,"is not a prime number")
+	else:
+		print(n,"is a prime number")
+
+else:
+	print(n,"is a prime number")
