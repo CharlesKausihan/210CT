@@ -1,4 +1,4 @@
-#reverse words in a sentence
+#Reverse words in a sentence
 
 def reverseSentence(s):
   x = s.split() #splits sentence
