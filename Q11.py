@@ -1,3 +1,5 @@
+#Double linked list node delete function
+
 class BinTreeNode(object):
  
     def __init__(self, value):
