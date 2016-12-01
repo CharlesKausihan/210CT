@@ -1,4 +1,4 @@
-#Double linked list node delete function
+#TREE_SORT algorithm with INORDER function implemented iteratively.
 
 class BinTreeNode(object):
  
