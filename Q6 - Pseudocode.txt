@@ -1,0 +1,11 @@
+Pseudocode for reversing words in a sentence
+
+def reverseSentence(s):
+  x <- split s 
+  result <- [] 
+  for word in x:
+    insert result(0,word) 
+  return " ".join(result)
+
+s <- str(input('Enter sentence: '))
+print(reverseSentence(s))

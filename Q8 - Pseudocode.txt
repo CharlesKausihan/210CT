@@ -1,0 +1,13 @@
+Pseudocode for removing vowels from words
+
+def removeVowels(w):
+    vowels <- ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+    newString <- ""
+    for i in w: 
+        if i is not in vowels:
+            newString <- newString+i
+    w <- newString
+    return w
+
+w <- str(input('Enter word: '))
+print(removeVowels(w))
