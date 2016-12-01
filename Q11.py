@@ -45,12 +45,12 @@ class List(object):
       while n!=None:
           values.append(str(n.value))
           n=n.next
-      print ("List: ",",".join(values))
+      print ("List:",",".join(values))
       
 if __name__ == '__main__':
   l=List()
-  l.insert(None, Node(4))
-  l.insert(l.head,Node(6))
-  l.insert(l.head,Node(8))
+  l.insert(None, Node(5))
+  l.insert(l.head,Node(7))
+  l.insert(l.head,Node(9))
   l.remove(l.head)
   l.display()
