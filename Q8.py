@@ -1,3 +1,5 @@
+#Remove vowels from words
+
 def removeVowels(w):
     vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
     newString = ""
@@ -9,4 +11,3 @@ def removeVowels(w):
 
 w = str(input('Enter word: '))
 print(removeVowels(w))
-
