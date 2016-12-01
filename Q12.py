@@ -38,14 +38,14 @@ def in_order(tree):
     end = False
     while(not end):
         if tree != None:
-            stackOrder.append(tree)
-            tree = tree.left
+            stackOrder.append(tree) #Adds to tree
+            tree = tree.left #Moves to left of tree
 
         else:
             if(len(stackOrder) > 0):
-               tree = stackOrder.pop()
+               tree = stackOrder.pop() #Pop the element
                print(tree.value)
-               tree = tree.right
+               tree = tree.right #Moves to right of tree
 
             else:
                 break
