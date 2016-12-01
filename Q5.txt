@@ -1,0 +1,41 @@
+Pseudocode for addxng, subtractxng and multxplyxng of two matrxces
+
+MATRIXADD(B,C):
+  M <- INPUT matrix order			[1]
+  for x <- to M:				[n]
+    for y <- to M:				[n*n]
+      SUM [x,y] <- B[x,y] + C[x,y]		[n*n]
+
+  Return SUM					[1]
+
+
+MATRxXSUB(B,C):				
+  M <- INPUT matrix order			[1]
+  for x <- to M:				[n]
+    for y <- to M:				[n*n]
+      SUM [x,y] <- B[x,y] - C[x,y]		[n*n]
+
+  Return SUM					[1]
+
+
+MATRIXMULTx(B,C):
+  M <- INPUT matrix order			[1]
+  for x<-1 to M					[n]
+    for y<-1 to M				[n*n]
+      SUM[x,y]<-0    				[n*n]
+for x <- to M:					[n]
+  for y <- to M:				[n*n]
+    for z <- to M:				[n*n*n]
+      SUM [x,y] <- SUM[x,y] + B[x,z]* C[z,y]	[n*n*n]
+
+  Return SUM					[1]
+
+
+R = B*C + 2(B+C)
+R1 <- MULT_MAT(B,C)
+R2 <- ADD_MAT(B,C)
+R3 <- MULT_NR)R2,2)
+R <- R1+R3
+
+
+6 + 7n^2 + 2n^4 = O(n^2)
