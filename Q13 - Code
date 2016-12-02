@@ -1,0 +1,34 @@
+#Unweighted graph data structure using adjacency list
+
+class Graph:
+    def __init__(self):
+        self.graph = {} #Creates dictionary
+
+    def insertNode(self, label):
+        self.graph[label] = [] #Inserts nodes into dictionary
+
+    def insertEdge(self,N,E): #Add edges to each nodes list of edges
+        self.graph[N].append(E)
+        self.graph[E].append(N)
+
+    def printGraph(self): #Loops through dictionary to print all the key,values
+        for key,value in self.graph.items():
+            print(key,value)
+
+g = Graph()
+
+g.insertNode('A')
+g.insertNode('B')
+g.insertNode('C')
+g.insertNode('D')
+g.insertNode('E')
+g.insertEdge('A','B')
+g.insertEdge('A','E')
+g.insertEdge('A','C')
+g.insertEdge('B','D')
+g.insertEdge('B','E')
+g.insertEdge('C','D')
+g.insertEdge('C','B')
+g.insertEdge('D','E')
+
+g.printGraph()
