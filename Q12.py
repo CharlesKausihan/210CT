@@ -45,7 +45,7 @@ def in_order(tree):
             if(len(stackOrder) > 0):
                tree = stackOrder.pop() #Pop the element
                print(tree.value)
-               tree = tree.right #Moves to right of tree
+               tree = tree.right #Moves to right as there is nothing on left
 
             else:
                 break
