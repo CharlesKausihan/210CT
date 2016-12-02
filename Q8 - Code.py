@@ -1,6 +1,8 @@
 #Remove vowels from words
 
 def removeVowels(w):
+    if not w:
+        return w
     vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
     newString = ""
     for i in w: 
