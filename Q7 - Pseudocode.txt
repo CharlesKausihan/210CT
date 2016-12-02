@@ -1,12 +1,15 @@
-Pseudocode for checking if a number is a prime
+Pseudocode check if a number is a prime
 
-INPUT n
-if s > 1 then:
-	for i in range of 2&n:
-		if n/1 <- 0 then:
-			print(n,"is not a prime number")
-	else:
-		print(n,"is a prime number")
+n <- int(input("Enter a number: "))
 
+if n > 1:
+    for i in range(2,n):
+       if (n % i) = 0:
+           print(n,"is not a prime number")
+           break
+
+    else:
+        print(n,"is a prime number")
+       
 else:
-	print(n,"is a prime number")
+    print(n,"is not a prime number")
