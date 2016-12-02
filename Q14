@@ -1,0 +1,66 @@
+class Graph:
+    def __init__(self):
+        self.graph = {} #Creates dictionary
+
+    def insertNode(self, label):
+        self.graph[label] = []
+
+    def insertEdge(self,N,E): #Add edges to each nodes list of edges
+        self.graph[N].append(E)
+        self.graph[E].append(N)
+
+    def printGraph(self): #Loops through dictionary to print all the key,values
+        for key,value in self.graph.items():
+            print(key,value)
+
+    def depthFirst(self,v):
+        stack = [] #initalise a stack for dfs
+        visited = []
+        stack.append(v)
+        while stack != []:#loops throught the graph using stack
+            u = stack.pop()
+            if u not in visited:
+                visited.append(u) #add vertex to visited
+                for edge in self.graph[u]:#loop through connected edge to that vertex and add edge to the stack
+                    stack.append(edge)
+        file = open("Depth First Search.txt","w")
+        file.write(str(visited))
+        file.close
+        return visited
+    
+    def breadthFirst(self,v):
+        q = [] #creating a queue
+        visited = []
+        q.insert(0,v)
+        while q != []:#loops through the graph using the start value
+            u = q.pop()
+            if u not in visited:
+                visited.append(u) #add vertex to visited
+                for edge in self.graph[u]:#loop through connected edge to that vertex and add edge to the queue
+                    q.insert(0,edge)
+        file = open("Breadth First Search.txt","w")
+        file.write(str(visited))
+        file.close
+        return visited
+
+
+g = Graph()
+
+g.insertNode('A')
+g.insertNode('B')
+g.insertNode('C')
+g.insertNode('D')
+g.insertNode('E')
+g.insertEdge('A','B')
+g.insertEdge('A','E')
+g.insertEdge('A','C')
+g.insertEdge('B','D')
+g.insertEdge('B','E')
+g.insertEdge('C','D')
+g.insertEdge('C','B')
+g.insertEdge('D','E')
+
+g.printGraph()
+
+print("Depth First Search: " + str(g.depthFirst('A')))
+print("Breadth First Search: " + str(g.breadthFirst('B')))
